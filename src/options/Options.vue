@@ -1,6 +1,6 @@
 <script setup lang="ts">
-	import logo from "~/assets/logo.svg"
-	import { storageDemo } from "~/logic/storage"
+	import logo from "@/assets/logo.svg"
+	import { storageDemo } from "@/logic/storage"
 </script>
 
 <template>
