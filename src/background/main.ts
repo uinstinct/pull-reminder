@@ -66,5 +66,8 @@ onMessage("get-current-tab", async () => {
 })
 
 browser.action.onClicked.addListener(() => {
-	browser.runtime.openOptionsPage()
+	browser.tabs.create({
+		url: 'dist/views/pullRequests/index.html',
+		active: true,
+	})
 })

@@ -102,6 +102,7 @@ export default defineConfig(({ command }) => ({
     },
     rollupOptions: {
       input: {
+        viewsPullRequests: r('src/views/pullRequests/index.html'),
         options: r('src/options/index.html'),
         sidepanel: r('src/sidepanel/index.html'),
       },
