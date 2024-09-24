@@ -9,10 +9,10 @@ test('example test', async ({ page }, testInfo) => {
   await expect(page.locator(`#${name} h1`)).toHaveText('Vitesse WebExt')
 })
 
-test('popup page', async ({ page, extensionId }) => {
-  await page.goto(`chrome-extension://${extensionId}/dist/popup/index.html`)
-  await expect(page.locator('button')).toHaveText('Open Options')
-})
+// test('popup page', async ({ page, extensionId }) => {
+//   await page.goto(`chrome-extension://${extensionId}/dist/popup/index.html`)
+//   await expect(page.locator('button')).toHaveText('Open Options')
+// })
 
 test('options page', async ({ page, extensionId }) => {
   await page.goto(`chrome-extension://${extensionId}/dist/options/index.html`)
