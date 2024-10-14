@@ -1,7 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+	import DarkModeToggle from "./DarkModeToggle.vue"
+
+</script>
 
 <template>
-	<main class="px-4 py-10 text-center text-gray-700 dark:text-gray-200">
+	<main class="min-h-screen p-8 relative">
+		<div class="absolute top-4 right-4">
+			<DarkModeToggle />
+		</div>
 		<h1>pull requests page</h1>
 	</main>
 </template>
