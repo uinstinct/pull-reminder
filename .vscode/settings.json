@@ -10,5 +10,6 @@
   "files.associations": {
     "*.css": "postcss"
   },
-  "prettier.configPath": "./.prettierrc"
+  "prettier.configPath": "./.prettierrc",
+  "editor.wordWrap": "wordWrapColumn"
 }
