@@ -15,14 +15,16 @@
     "postinstall": "wxt prepare"
   },
   "dependencies": {
+    "axios": "^1.7.7",
+    "unocss": "^0.63.4",
     "vue": "^3.5.11"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
     "@wxt-dev/module-vue": "^1.0.1",
+    "prettier-plugin-organize-imports": "^4.1.0",
     "typescript": "^5.6.2",
     "vue-tsc": "^2.1.6",
-    "wxt": "^0.19.11",
-    "prettier-plugin-organize-imports": "^4.1.0",
-    "@ianvs/prettier-plugin-sort-imports": "^4.3.1"
+    "wxt": "^0.19.11"
   }
 }
