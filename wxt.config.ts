@@ -15,5 +15,6 @@ export default defineConfig({
 	vite: () =>
 		defineViteConfig({
 			plugins: [UnoCSS()]
-		})
+		}),
+	outDir: "extension"
 })
