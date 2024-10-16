@@ -1,1 +1,0 @@
-1. it should show the PRs in the page (merged, open, closed, etc.)
