@@ -19,7 +19,7 @@
 
 	const fetchData = () => {
 		loading.value = true
-		error.value = ''
+		error.value = ""
 		fetchPullRequests({
 			state: activeTab.value,
 			currentPage: currentPage.value,

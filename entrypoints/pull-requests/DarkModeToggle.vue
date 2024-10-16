@@ -1,12 +1,12 @@
 <script setup lang="ts">
 	const darkMode = ref(true)
 	const toggleDarkMode = (dark = darkMode.value) => {
-        darkMode.value = !dark
-        if(dark) {
-            document.documentElement.classList.add("dark")
-        } else {
-            document.documentElement.classList.remove("dark")
-        }
+		darkMode.value = !dark
+		if (dark) {
+			document.documentElement.classList.add("dark")
+		} else {
+			document.documentElement.classList.remove("dark")
+		}
 	}
 
 	onMounted(() => {

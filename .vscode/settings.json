@@ -1,12 +1,4 @@
 {
-  "cSpell.words": ["Vitesse"],
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "vite.autoStart": false,
-  "eslint.experimental.useFlatConfig": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    // "source.sortImports": "always"
-  },
   "files.associations": {
     "*.css": "postcss"
   },

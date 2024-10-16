@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import { IPullRequest } from '@/utils/fetch-data';
+	import { IPullRequest } from "@/utils/fetch-data"
 
 	defineProps<{
 		pullRequests: IPullRequest[]
 	}>()
 
-	const formatDate = (dateString: string) => new Date(dateString).toLocaleDateString()
+	const formatDate = (dateString: string) =>
+		new Date(dateString).toLocaleDateString()
 </script>
 
 <template>
@@ -14,7 +15,10 @@ import { IPullRequest } from '@/utils/fetch-data';
 			<div class="flex items-center space-x-4">
 				<div class="flex-shrink-0">
 					<span
-						:class="['inline-block h-3 w-3 rounded-full', pr.state === 'open' ? 'bg-green-400' : 'bg-purple-400']"
+						:class="[
+							'inline-block h-3 w-3 rounded-full',
+							pr.state === 'open' ? 'bg-green-400' : 'bg-purple-400'
+						]"
 					></span>
 				</div>
 				<div class="flex-1 min-w-0">
