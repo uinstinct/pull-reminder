@@ -4,9 +4,14 @@ import { defineConfig } from "wxt"
 
 // See https://wxt.dev/api/config.html
 export default defineConfig({
+	runner: {
+disabled: true
+	},
 	modules: ["@wxt-dev/module-vue"],
 	manifest: {
-		action: {}
+		permissions: ['cookies', 'activeTab'],
+		action: {},
+		host_permissions: ['<all_urls>'],
 		// web_accessible_resources: [{
 		//   resources: ["views/pull-requests.html"],
 		//   "matches": [ "<all_urls>" ]

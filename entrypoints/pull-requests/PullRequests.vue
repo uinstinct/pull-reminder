@@ -1,9 +1,9 @@
 <script setup lang="ts">
 	import {
 		fetchPullRequests,
-		IPullRequest,
+		IPRCollectedData,
 		PullRequestType
-	} from "@/utils/fetch-data"
+	} from "@/utils/fetch-pull-requests"
 	import DarkModeToggle from "./DarkModeToggle.vue"
 	import Loader from "./Loader.vue"
 	import PullRequestsList from "./PullRequestsList.vue"
@@ -15,18 +15,14 @@
 	const search = ref("")
 	const error = ref("")
 	const loading = ref(false)
-	const pullRequests = ref<IPullRequest[]>([])
+	const pullRequests = ref<IPRCollectedData[]>([])
 
 	const fetchData = () => {
 		loading.value = true
 		error.value = ""
-		fetchPullRequests({
-			state: activeTab.value,
-			currentPage: currentPage.value,
-			searchQuery: search.value
-		})
+		fetchPullRequests()
 			.then((data) => {
-				pullRequests.value = data.pullRequests
+				pullRequests.value = data
 			})
 			.catch((err) => {
 				error.value = err.message
